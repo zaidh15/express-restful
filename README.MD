@@ -7,13 +7,13 @@ This repository use `expressjs`, and ORM `Sequelize`
 The REST API of dummy data covid patients to the example is described below
 
 
-**Get list resource**
+### Get list resource
 
 `GET /patients/`
 
     curl -v http://localhost:3000/patients
 
-**Get detail resource **
+**Get detail resource**
 
 `GET /patients/id`
 
