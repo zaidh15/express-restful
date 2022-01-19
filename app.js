@@ -1,7 +1,17 @@
-/**
- * TODO 1: SETUP SERVER USING EXPRESS.JS.
- * UBAH SERVER DI BAWAH MENGGUNAKAN EXPRESS.JS.
- * SERVER INI DIBUAT MENGGUNAKAN NODE.JS NATIVE.
- */
+const express = require("express");
+const { process_params } = require("express/lib/router");
 
-(function(){"use strict";require("http").createServer(function(t,e){e.writeHead(200,{"Content-Type":"text/html"}),e.write("Final Project UAS - Good Luck."),e.end()}).listen(3e3,function(){console.log("[Server] Running at: http://localhost:3000")})}).call(this);
+const app = express();
+
+// definisikan port
+app.listen(3000, () => {
+    console.log("Server is running at https://localhost:3000");
+});
+
+// menggunakan middleware
+const router = require("./routes/api");
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// menggunakan routing
+app.use(router);
