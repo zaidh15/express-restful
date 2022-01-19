@@ -2,7 +2,7 @@
 
 This repository use `expressjs`, and ORM `Sequelize`
 
-## REST API
+# REST API
 
 The REST API of dummy data covid patients to the example is described below
 
