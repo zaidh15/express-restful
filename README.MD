@@ -7,39 +7,41 @@ This repository use `expressjs`, and ORM `Sequelize`
 The REST API of dummy data covid patients to the example is described below
 
 
-## Get list resource
+**Get list resource**
 
 `GET /patients/`
 
-## Get detail resource 
+    curl -v http://localhost:3000/patients
+
+**Get detail resource **
 
 `GET /patients/id`
 
-## Get searched name
+**Get searched name**
 
 `GET /patients/search/name`
 
-## Get positive only resource
+**Get positive only resource**
 
 `GET /patients/positive`
 
-## Get recovered only resource
+**Get recovered only resource**
 
 `GET /patients/recovered`
 
-## Get dead only resource
+**Get dead only resource**
 
 `GET /patients/dead`
 
-## Create new resource
+**Create new resource**
 
 `POST /patients/`
 
-## Update new resource
+**Update new resource**
 
 `PUT /patients/id`
 
-## Destroy new resource
+**Destroy new resource**
 
 `DELETE /patients/id`
 
